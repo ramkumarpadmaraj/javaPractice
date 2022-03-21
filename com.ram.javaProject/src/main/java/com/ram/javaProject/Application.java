@@ -3,9 +3,19 @@ package com.ram.javaProject;
 public class Application {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Test Project");
-
+	
+		/*
+		 * FindElementsWithSumUnsortedArray fs=new FindElementsWithSumUnsortedArray();
+		 * 
+		 * int[] array= {1, 2,4,4}; int sum=8; boolean
+		 * bool=fs.isElementsWithSumPresent(array, sum); System.out.println(bool);
+		 */
+		FindMatchInAnotherArray fm=new FindMatchInAnotherArray();
+		char[] array1= {'a','b','c','f'};
+		char[] array2= {'d','e','k','g'};
+		boolean bool=fm.isMatchFound(array1, array2);
+		System.out.println(bool);
+		
 	}
 
 }
