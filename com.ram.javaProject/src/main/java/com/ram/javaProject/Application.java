@@ -1,14 +1,17 @@
 package com.ram.javaProject;
 
+import java.util.HashMap;
+
 public class Application {
 
 	public static void main(String[] args) {
 	
-		
-		  FindElementsWithSumUnsortedArray fs=new FindElementsWithSumUnsortedArray();
-		  
-		  int[] array= {6, 3,7,1}; int sum=8; boolean
-		  bool=fs.isElementsWithSumPresent(array, sum); System.out.println(bool);
+		/*
+		 * FindElementsWithSumUnsortedArray fs=new FindElementsWithSumUnsortedArray();
+		 * 
+		 * int[] array= {6, 3,7,1}; int sum=8; boolean
+		 * bool=fs.isElementsWithSumPresent(array, sum); System.out.println(bool);
+		 */
 		 
 		/*
 		 * FindMatchInAnotherArray fm=new FindMatchInAnotherArray(); char[] array1=
@@ -21,6 +24,10 @@ public class Application {
 		 * array= {1,2,4,5}; int sum=8; boolean bool=fs.isElementsWithSumPresent(array,
 		 * sum); System.out.println(bool);
 		 */
+		
+		FindOccurrence fo=new FindOccurrence();
+		HashMap<Character,Integer> hm=fo.findOccurence("good morning");
+		System.out.println(hm.toString());
 	}
 
 }
