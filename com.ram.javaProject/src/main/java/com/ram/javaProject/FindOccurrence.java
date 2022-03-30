@@ -5,9 +5,8 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class FindOccurrence {
-	
-	private HashMap<Character,Integer> occurence =new HashMap<Character,Integer>();
-	
+
+	private HashMap<Character, Integer> occurence = new HashMap<Character, Integer>();
 
 	public HashMap<Character,Integer> findOccurence(String str)
 	{
@@ -23,7 +22,7 @@ public class FindOccurrence {
 				occurence.put(ch[i], 1);
 			}
 						
-		Iterator<Map.Entry<Character, Integer> > iterator = occurence.entrySet().iterator();
+/*		Iterator<Map.Entry<Character, Integer> > iterator = occurence.entrySet().iterator();
 		Integer valueToBeRemoved=1;
     // Iterate over the HashMap
     while (iterator.hasNext()) {
@@ -36,11 +35,14 @@ public class FindOccurrence {
 
             // Remove this entry from HashMap
             iterator.remove();
-        }
-    }
+        }*/
 		
-		return occurence;
-		
-		
+		for(Character Key: occurence.keySet())
+			if(occurence.get(Key)>1)
+			System.out.println(Key+":" +occurence.get(Key));
+    
+
+	return occurence;
 	}
+	
 }
