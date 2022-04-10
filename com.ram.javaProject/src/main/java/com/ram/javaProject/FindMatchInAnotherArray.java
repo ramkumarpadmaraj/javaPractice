@@ -2,11 +2,15 @@
 
 package com.ram.javaProject;
 
+import java.util.Arrays;
 import java.util.HashSet;
 
 public class FindMatchInAnotherArray {
 	public boolean isMatchFound(char[] array1, char[] array2)
 	{
+		//Arrays.sort(array1);
+		System.out.println(Arrays.toString(array1));
+		
 		HashSet<Character> hs=new HashSet<Character>();
 		for(int i=0;i<array1.length;i++)
 		{
