@@ -14,11 +14,11 @@ public class Application {
 		 * bool=fs.isElementsWithSumPresent(array, sum); System.out.println(bool);
 		 */
 
-		/*
-		 * FindMatchInAnotherArray fm=new FindMatchInAnotherArray(); char[] array1=
-		 * {'a','e','c','f'}; char[] array2= {'d','e','y','g'}; boolean
-		 * bool=fm.isMatchFound(array1, array2); System.out.println(bool);
-		 */
+		
+		  FindMatchInAnotherArray fm=new FindMatchInAnotherArray(); char[] array1=
+		  {'a','e','c','f','e','c'}; char[] array2= {'d','e','y','g'}; boolean
+		  bool=fm.isMatchFound(array1, array2); System.out.println(bool);
+		 
 		 
 		/*
 		 * FindPrimes fp=new FindPrimes(); ArrayList<Long>
@@ -37,13 +37,13 @@ public class Application {
 		 * hm=fo.findOccurence("good afternoon"); System.out.println(hm.toString());
 		 */ 
 
-		/*
-		 * FindOccurrenceOfChar foc=new FindOccurrenceOfChar(); String
-		 * str="This is a program to find the number of occurrences of a character in a given string"
-		 * ;
-		 * 
-		 * System.out.println(foc.findOccurenceOfChar(str, 'x'));
-		 */
+			char findChar='o';
+		  FindOccurrenceOfChar foc=new FindOccurrenceOfChar(); String
+		  str="This is a program to find the number of occurrences of a character in a given string"
+		  ;
+		  
+		  System.out.println("Total number of Occurrences for the character "+ findChar+ ": "+foc.findOccurenceOfChar(str, findChar));
+		 
 		
 		/*
 		 * Pojo p=new Pojo(100); ChildClass cc=new ChildClass(); Pojo p1=new
