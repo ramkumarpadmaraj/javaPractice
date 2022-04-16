@@ -22,6 +22,7 @@ public class FindOccurrence {
 				occurence.put(ch[i], 1);
 			}
 						
+		
 /*		Iterator<Map.Entry<Character, Integer> > iterator = occurence.entrySet().iterator();
 		Integer valueToBeRemoved=1;
     // Iterate over the HashMap
