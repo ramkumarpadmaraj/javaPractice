@@ -30,7 +30,7 @@ public class Excercise1 {
 			  while(iterator.hasNext()) { count++; iterator.next();
 			  
 			  } System.out.println(count);
-			  HashSet<String> hs=new HashSet<String>();
+			  LinkedHashSet<String> hs=new LinkedHashSet<String>();
 			  hs.addAll(colors);
 			  System.out.println(hs.toString());
 		  
